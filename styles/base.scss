@@ -1,0 +1,69 @@
+@import 'reset.scss';
+@import 'variables.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Barlow:900|Roboto');
+
+// Styling
+body {
+  background: $color-background;
+  font-size: $font-body-size;
+  color: $font-color;
+
+}
+
+h1 {
+  font-family: $font-heading;
+  font-weight: $font-heading-weight;
+  font-size: $font-heading-size;
+  letter-spacing: $font-heading-letterspacing;
+}
+
+h2 {
+  font-family: $font-body;
+  font-size: $font-thanks-size;
+  letter-spacing: $font-heading-letterspacing;
+  text-align: center;
+  text-transform: uppercase;
+  color: $font-thanks-color;
+}
+
+p {
+  margin: 1.6em 0 1em 0;
+  font-family: $font-body;
+  font-weight: $font-body-weight;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+svg#computer {
+  margin: 0 auto;
+  max-width: 70vw;
+  max-height: 50vh;
+  // background: $color-heading-background;
+}
+
+div#announcement {
+  margin: auto;
+  padding: 0 1em;
+  border-left: 8px solid rgb(233, 147, 71);
+  border-right: 8px solid rgba(233, 147, 71,0);
+
+}
+
+// The Exclamation Animation
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#exclamation {
+  animation: fadein 1.5s 1s forwards;
+}

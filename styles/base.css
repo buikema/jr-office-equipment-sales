@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow:900|Roboto");
+html, body,
+h1, h2, h3,
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  font-size: 16px;
+  color: #313131;
+}
+
+h1 {
+  font-family: "Barlow", "HelveticaNeue-CondensedBold", "Arial Black", sans-serif;
+  font-weight: 900;
+  font-size: 1.8em;
+  letter-spacing: 0.025em;
+}
+
+h2 {
+  font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.025em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #b4b4b4;
+}
+
+p {
+  margin: 1.6em 0 1em 0;
+  font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+svg#computer {
+  margin: 0 auto;
+  max-width: 70vw;
+  max-height: 50vh;
+}
+
+div#announcement {
+  margin: auto;
+  padding: 0 1em;
+  border-left: 8px solid #e99347;
+  border-right: 8px solid rgba(233, 147, 71, 0);
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#exclamation {
+  animation: fadein 1.5s 1s forwards;
+}
+/*# sourceMappingURL=base.css.map */
